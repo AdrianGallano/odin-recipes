@@ -17,19 +17,63 @@ html{
 }
 
 body{
+    font-family: 'Fira Sans', sans-serif;
     background-color: var(--color-two);
     color: var(--color-one);
 }
 
 header{
     display: flex;
+    height: 10vh;
+    justify-content: end;
+    align-items: center;
+    /* TYPOGRAPHY */
     font-weight: bold;
     font-size: 2em;
+}
+
+header,
+main,
+footer{
     padding: 1rem 2rem;
-    justify-content: end;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+}
+
+footer{
+    background-color: #f2f2f2;
+    height: 100vh;
+    color: var(--color-one);
+}
+
+
+.head-tag{
+    /* TYPHOGRAPHY */
+    font-size: 3em;
+    font-weight: bold;
+    padding-top: 5rem;
+}
+
+.options a{
+    color: #a19f9f;
+    text-decoration: none;
+
 }
 
 /* || COMPLEXITY */
 @media (min-width:767px){
+    header,
+    main,
+    footer{
+        padding: 1rem 10rem;
+    }
 
+    .head-tag{
+        /* TYPHOGRAPHY */
+        font-size: 7em;
+    }
 }
